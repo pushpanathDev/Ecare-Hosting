@@ -13,9 +13,11 @@ const db = firebase.firestore();
 const User = db.collection("Users");
 const Caretaker = db.collection("Caretaker");
 const Medics = db.collection("Medics");
+const Doctors = db.collection("Doctors");
 
 module.exports = {
   User: User,
   Caretaker: Caretaker,
   Medics: Medics,
+  Doctors: Doctors,
 };
