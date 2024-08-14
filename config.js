@@ -14,10 +14,12 @@ const User = db.collection("Users");
 const Caretaker = db.collection("Caretaker");
 const Medics = db.collection("Medics");
 const Doctors = db.collection("Doctors");
+const Orders = db.collection("Orders");
 
 module.exports = {
   User: User,
   Caretaker: Caretaker,
   Medics: Medics,
   Doctors: Doctors,
+  Orders: Orders,
 };
