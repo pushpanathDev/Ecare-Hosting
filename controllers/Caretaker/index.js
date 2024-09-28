@@ -42,4 +42,15 @@ router.put("/caretaker/:id", authenticateToken, async (req, res) => {
   }
 });
 
+router.delete("/caretaker/:id", authenticateToken, async (req, res) => {
+  try {
+    const id = req.params.id;
+    await Caretaker.doc(id).delete();
+    res.json({ msg: "Caretaker Deleted" });
+  } catch (error) {
+    console.error("Error deleting caretaker:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
 module.exports = router;

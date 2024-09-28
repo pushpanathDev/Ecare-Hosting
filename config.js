@@ -15,6 +15,7 @@ const Caretaker = db.collection("Caretaker");
 const Medics = db.collection("Medics");
 const Doctors = db.collection("Doctors");
 const Orders = db.collection("Orders");
+const Appointments = db.collection("Appointments");
 
 module.exports = {
   User: User,
@@ -22,4 +23,5 @@ module.exports = {
   Medics: Medics,
   Doctors: Doctors,
   Orders: Orders,
+  Appointments: Appointments,
 };
